@@ -2,123 +2,235 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <title>Lionel Messi</title>
-        .page {
-            max-width: 1000px;
+    <title>Lionel Messi - Infos für die 8. Klasse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #0a1f3b;
+            margin: 0;
+            padding: 15px;
+        }
+        
+        .card {
+            max-width: 900px;
             margin: 0 auto;
             background: white;
-            border-radius: 15px;
-            overflow: hidden;
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px black;
         }
-        .header {
-            background: #0a1f3b;
-            color: white;
-            padding: 20px;
+        
+        h1 {
             text-align: center;
-            border-bottom: 3px solid gold;
+            color: #0a1f3b;
+            font-size: 48px;
+            margin: 0 0 5px 0;
+            background: #ffd700;
+            padding: 15px;
+            border-radius: 15px;
         }
-        .header h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-        .row {
+        
+        .menu {
             display: flex;
             flex-wrap: wrap;
-            gap: 15px;
-            padding: 20px;
-        }
-        .box {
-            background: #f5f5f5;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+            background: #f0f0f0;
             padding: 15px;
-            border-radius: 10px;
-            flex: 1 1 250px;
-            border-left: 4px solid #0a1f3b;
+            border-radius: 50px;
         }
-        .box h3 {
+        
+        .menu a {
+            background: #0a1f3b;
+            color: white;
+            text-decoration: none;
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 14px;
+        }
+        
+        .box {
+            background: #f8f8f8;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 8px solid #0a1f3b;
+        }
+        
+        h2 {
             color: #0a1f3b;
-            margin: 0 0 10px 0;
-            border-bottom: 2px solid gold;
+            margin: 0 0 15px 0;
+            font-size: 28px;
+            border-bottom: 3px solid #ffd700;
             padding-bottom: 5px;
         }
-        .big {
-            font-size: 30px;
+        
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 10px 0;
+        }
+        
+        .fett {
+            font-weight: bold;
+            color: #0a1f3b;
+            font-size: 18px;
+        }
+        
+        .tore-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .tore-item {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid #ffd700;
+        }
+        
+        .zahl {
+            font-size: 40px;
             font-weight: bold;
             color: #0a1f3b;
         }
-        .flag {
-            font-size: 30px;
-        }
+        
         .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
             background: #0a1f3b;
             color: white;
-            text-align: center;
-            padding: 15px;
+            border-radius: 15px;
+        }
+        
+        .emoji {
+            font-size: 30px;
+        }
+        
+        @media (max-width: 600px) {
+            .tore-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="page">
-        <div class="header">
-            <h1>🇦🇷 LIONEL MESSI 🇦🇷</h1>
+    <div class="card">
+        <h1>🇦🇷 LIONEL MESSI 🇦🇷</h1>
+        <p style="text-align: center; font-size: 18px; color: #666;">Der beste Fußballer der Welt - Einfach erklärt</p>
+        
+        <div class="menu">
+            <a href="#herkunft">Herkunft</a>
+            <a href="#aktuell">Aktuell</a>
+            <a href="#familie">Familie</a>
+            <a href="#tore">Tore</a>
+            <a href="#fuss">Fuß</a>
+            <a href="#erfolge">Erfolge</a>
         </div>
         
-        <div class="row">
-            <!-- HERKUNFT -->
-            <div class="box">
-                <h3>🌎 HERKUNFT</h3>
-                <p><span class="flag">🇦🇷</span> Argentinien</p>
-                <p>🏙️ Rosario, 24.06.1987</p>
-                <p>🇮🇹 Italienische Wurzeln</p>
-                <p>⚽ Jugend: Newell's Old Boys</p>
-                <p>✈️ Mit 13 nach Spanien</p>
+        <!-- HERKUNFT -->
+        <div id="herkunft" class="box">
+            <h2>🌎 Wo kommt Messi her?</h2>
+            <p><span class="emoji">🇦🇷</span> <span class="fett">Land:</span> Argentinien (Südamerika)</p>
+            <p><span class="emoji">🏙️</span> <span class="fett">Geburtsstadt:</span> Rosario (24. Juni 1987)</p>
+            <p><span class="emoji">⚽</span> <span class="fett">Jugendverein:</span> Newell's Old Boys (da hat er als Kind gespielt)</p>
+            <p><span class="emoji">✈️</span> <span class="fett">Mit 13 nach Spanien:</span> Weil er krank war (Wachstumshormon-Mangel) und Barça die Behandlung bezahlt hat.</p>
+            <p><span class="emoji">🇮🇹</span> <span class="fett">Fun Fact:</span> Seine Urgroßeltern kamen aus Italien, deshalb hat er auch einen italienischen Pass.</p>
+        </div>
+        
+        <!-- AKTUELLER VEREIN & WERT & WOHNORT -->
+        <div id="aktuell" class="box">
+            <h2>📍 Was macht Messi gerade?</h2>
+            <p><span class="emoji">🇺🇸</span> <span class="fett">Aktueller Verein:</span> Inter Miami (USA) - seit 2023</p>
+            <p><span class="emoji">💰</span> <span class="fett">Marktwert:</span> 25 Millionen Euro (mit 36 Jahren immer noch viel!)</p>
+            <p><span class="emoji">🏠</span> <span class="fett">Wohnort:</span> Miami, Florida (USA) - lebt da mit seiner Familie in einer riesigen Villa</p>
+            <p><span class="emoji">📅</span> <span class="fett">Vertrag:</span> bis 2025 bei Inter Miami</p>
+        </div>
+        
+        <!-- FAMILIE -->
+        <div id="familie" class="box">
+            <h2>👪 Familie</h2>
+            <p><span class="emoji">💍</span> <span class="fett">Ehefrau:</span> Antonela Roccuzzo (kennen sich seit Kindertagen, geheiratet 2017)</p>
+            <p><span class="emoji">👦👦👦</span> <span class="fett">Drei Söhne:</span></p>
+            <p>• Thiago (11 Jahre) - der Ruhige</p>
+            <p>• Mateo (9 Jahre) - der Verrückte, macht immer Chaos</p>
+            <p>• Ciro (6 Jahre) - der Sonnenschein</p>
+            <p><span class="emoji">👨👩</span> <span class="fett">Eltern:</span> Jorge (Vater, war sein Berater) und Celia (Mutter)</p>
+        </div>
+        
+        <!-- TORE -->
+        <div id="tore" class="box">
+            <h2>⚽ Wie viele Tore hat Messi geschossen?</h2>
+            <div class="tore-grid">
+                <div class="tore-item">
+                    <span class="emoji">🇪🇸</span>
+                    <div class="zahl">672</div>
+                    <div>FC Barcelona</div>
+                    <small>(in 778 Spielen)</small>
+                </div>
+                <div class="tore-item">
+                    <span class="emoji">🇫🇷</span>
+                    <div class="zahl">32</div>
+                    <div>Paris SG</div>
+                    <small>(in 75 Spielen)</small>
+                </div>
+                <div class="tore-item">
+                    <span class="emoji">🇺🇸</span>
+                    <div class="zahl">34</div>
+                    <div>Inter Miami</div>
+                    <small>(in 44 Spielen)</small>
+                </div>
+                <div class="tore-item">
+                    <span class="emoji">🇦🇷</span>
+                    <div class="zahl">109</div>
+                    <div>Argentinien</div>
+                    <small>(in 187 Spielen)</small>
+                </div>
             </div>
-            
-            <!-- AKTUELL -->
-            <div class="box">
-                <h3>📍 AKTUELL</h3>
-                <p><span class="flag">🇺🇸</span> <strong>Inter Miami</strong></p>
-                <p>💰 Marktwert: €25 Mio.</p>
-                <p>🏠 Wohnort: Miami, USA</p>
-            </div>
-            
-            <!-- FAMILIE -->
-            <div class="box">
-                <h3>👪 FAMILIE</h3>
-                <p>💍 Antonela Roccuzzo</p>
-                <p>👦 Thiago (11), Mateo (9), Ciro (6)</p>
-                <p>👨‍👩‍👧 Eltern: Jorge & Celia</p>
-            </div>
-            
-            <!-- FUSS -->
-            <div class="box">
-                <h3>👟 FUSS</h3>
-                <p style="font-size: 40px; margin:0;">👈 LINKS</p>
-                <p>Bester Linksfuß der Welt</p>
-            </div>
-            
-            <!-- TORE -->
-            <div class="box">
-                <h3>⚽ TORE</h3>
-                <p>🇪🇸 Barcelona: <strong>672</strong></p>
-                <p>🇫🇷 PSG: <strong>32</strong></p>
-                <p>🇺🇸 Inter Miami: <strong>34</strong></p>
-                <p>🇦🇷 Argentinien: <strong>109</strong></p>
-                <p class="big">GESAMT: 847</p>
-            </div>
-            
-            <!-- ERFOLGE -->
-            <div class="box">
-                <h3>🏆 ERFOLGE</h3>
-                <p>🏅 7x Ballon d'Or</p>
-                <p>🏆 4x Champions League</p>
-                <p>🇦🇷 Weltmeister 2022</p>
-                <p>🌟 10x La Liga</p>
-                <p>🥇 2x Copa América</p>
-            </div>
+            <p style="text-align: center; font-size: 24px; font-weight: bold; background: #ffd700; padding: 10px; border-radius: 50px; margin-top: 15px;">
+                🎯 GESAMT: 847 TORE!
+            </p>
+        </div>
+        
+        <!-- FUSS -->
+        <div id="fuss" class="box">
+            <h2>👟 Welcher Fuß?</h2>
+            <p style="font-size: 50px; text-align: center;">👈</p>
+            <p style="text-align: center; font-size: 22px; font-weight: bold;">LINKSFUSS!</p>
+            <p>Messi schießt fast alles mit links. Er hat den wahrscheinlich besten linken Fuß der Fußball-Geschichte. Mit rechts kann er aber auch gut spielen, etwa 15% seiner Tore hat er mit rechts gemacht.</p>
+        </div>
+        
+        <!-- ERFOLGE -->
+        <div id="erfolge" class="box">
+            <h2>🏆 Wichtigste Erfolge</h2>
+            <p>✅ <span class="fett">7x Ballon d'Or</span> (Rekord! Das ist der Preis für den besten Spieler der Welt)</p>
+            <p>✅ <span class="fett">4x Champions League</span> (2006, 2009, 2011, 2015)</p>
+            <p>✅ <span class="fett">10x Spanischer Meister</span> mit Barcelona</p>
+            <p>✅ <span class="fett">Weltmeister 2022</span> mit Argentinien (sein größter Traum!)</p>
+            <p>✅ <span class="fett">2x Copa América</span> (2021, 2024) mit Argentinien</p>
+            <p>✅ <span class="fett">Olympiasieger 2008</span></p>
+            <p>✅ <span class="fett">91 Tore in einem Jahr</span> (2012) - WELTREKORD!</p>
+        </div>
+        
+        <!-- Zusammenfassung -->
+        <div style="background: #0a1f3b; color: white; padding: 20px; border-radius: 15px; margin-top: 20px;">
+            <h3 style="color: #ffd700; text-align: center;">📌 Das Wichtigste kurz:</h3>
+            <p>🇦🇷 Herkunft: Argentinien (Rosario)</p>
+            <p>🎂 Alter: 36 Jahre (geb. 24.06.1987)</p>
+            <p>🇺🇸 Verein: Inter Miami (USA)</p>
+            <p>👪 Familie: Frau Antonela + 3 Söhne</p>
+            <p>⚽ Tore: 847 insgesamt</p>
+            <p>👟 Fuß: Links</p>
+            <p>🏆 Erfolge: 7x Ballon d'Or, Weltmeister, etc.</p>
         </div>
         
         <div class="footer">
-            ⭐ Der GOAT - Geboren in Rosario, Argentinien ⭐
+            <p>⭐ Lionel Messi - Der GOAT (Greatest Of All Time) ⭐</p>
+            <p style="font-size: 12px;">Erstellt für die 8. Klasse -简单 und übersichtlich</p>
         </div>
     </div>
 </body>
