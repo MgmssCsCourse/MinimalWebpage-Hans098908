@@ -2,344 +2,130 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lionel Messi - Herkunft & mehr</title>
+    <title>Lionel Messi</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             background: #0a1f3b;
             margin: 0;
-            padding: 20px;
+            padding: 10px;
         }
-        
-        .website {
-            max-width: 1200px;
+        .page {
+            max-width: 1000px;
             margin: 0 auto;
             background: white;
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 20px 40px black;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #0a1f3b, #1e3a6b);
-            color: white;
-            padding: 40px;
-            text-align: center;
-            border-bottom: 5px solid #ffd700;
-        }
-        
-        .header h1 {
-            font-size: 60px;
-            margin: 0;
-        }
-        
-        .nav {
-            background: #ffd700;
-            padding: 15px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-        }
-        
-        .nav a {
-            color: #0a1f3b;
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 15px;
-            font-size: 16px;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        
-        .nav a:hover {
-            background: #0a1f3b;
-            color: #ffd700;
-        }
-        
-        .content {
-            padding: 30px;
-        }
-        
-        .section {
-            background: #f5f7fa;
-            margin-bottom: 30px;
-            padding: 25px;
             border-radius: 15px;
-            border-left: 8px solid #0a1f3b;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
         }
-        
-        .section h2 {
-            color: #0a1f3b;
-            margin: 0 0 20px 0;
-            font-size: 32px;
-            border-bottom: 3px solid #ffd700;
-            padding-bottom: 10px;
-        }
-        
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        
-        .info-card {
-            background: white;
+        .header {
+            background: #0a1f3b;
+            color: white;
             padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            border-bottom: 3px solid gold;
         }
-        
-        .info-card h3 {
-            color: #0a1f3b;
-            margin: 0 0 15px 0;
-            font-size: 20px;
-        }
-        
-        .big-number {
-            font-size: 48px;
-            font-weight: bold;
-            color: #0a1f3b;
-        }
-        
-        .flag {
+        .header h1 {
+            margin: 0;
             font-size: 40px;
         }
-        
-        .herkunft-box {
-            background: #e8f0fe;
-            padding: 20px;
-            border-radius: 15px;
-            border: 2px solid #0a1f3b;
-        }
-        
-        .herkunft-item {
+        .row {
             display: flex;
-            align-items: center;
-            margin: 15px 0;
-            padding: 10px;
-            background: white;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+        }
+        .box {
+            background: #f5f5f5;
+            padding: 15px;
             border-radius: 10px;
+            flex: 1 1 250px;
+            border-left: 4px solid #0a1f3b;
         }
-        
-        .herkunft-icon {
+        .box h3 {
+            color: #0a1f3b;
+            margin: 0 0 10px 0;
+            border-bottom: 2px solid gold;
+            padding-bottom: 5px;
+        }
+        .big {
             font-size: 30px;
-            width: 60px;
-            text-align: center;
+            font-weight: bold;
+            color: #0a1f3b;
         }
-        
-        @media (max-width: 768px) {
-            .grid-2, .grid-3 {
-                grid-template-columns: 1fr;
-            }
+        .flag {
+            font-size: 30px;
+        }
+        .footer {
+            background: #0a1f3b;
+            color: white;
+            text-align: center;
+            padding: 15px;
         }
     </style>
 </head>
 <body>
-    <div class="website">
+    <div class="page">
         <div class="header">
             <h1>🇦🇷 LIONEL MESSI 🇦🇷</h1>
-            <p>Herkunft & Karriere</p>
         </div>
         
-        <div class="nav">
-            <a href="#herkunft">Herkunft</a>
-            <a href="#aktuell">Aktuell</a>
-            <a href="#familie">Familie</a>
-            <a href="#tore">Tore</a>
-            <a href="#fuss">Fuß</a>
-            <a href="#erfolge">Erfolge</a>
-        </div>
-        
-        <div class="content">
-            <!-- 1. HERKUNFT (NEU) -->
-            <div id="herkunft" class="section">
-                <h2>🌎 HERKUNFT</h2>
-                <div class="grid-2">
-                    <div class="herkunft-box">
-                        <div class="herkunft-item">
-                            <span class="herkunft-icon">🇦🇷</span>
-                            <div>
-                                <strong>Land:</strong> Argentinien
-                            </div>
-                        </div>
-                        
-                        <div class="herkunft-item">
-                            <span class="herkunft-icon">🏙️</span>
-                            <div>
-                                <strong>Geburtsstadt:</strong> Rosario
-                            </div>
-                        </div>
-                        
-                        <div class="herkunft-item">
-                            <span class="herkunft-icon">📅</span>
-                            <div>
-                                <strong>Geboren:</strong> 24. Juni 1987
-                            </div>
-                        </div>
-                        
-                        <div class="herkunft-item">
-                            <span class="herkunft-icon">🏠</span>
-                            <div>
-                                <strong>Aufgewachsen:</strong> Rosario, Argentinien
-                            </div>
-                        </div>
-                        
-                        <div class="herkunft-item">
-                            <span class="herkunft-icon">🇮🇹</span>
-                            <div>
-                                <strong>Vorfahren:</strong> Italienische Wurzeln
-                                <br><small>(Urgroßeltern aus Italien)</small>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>⚽ Jugendvereine</h3>
-                        <p>• Grandoli (1992-1995)</p>
-                        <p>• Newell's Old Boys (1995-2000)</p>
-                        <p>• FC Barcelona Jugend (2000-2004)</p>
-                        <p style="margin-top: 15px;"><strong>Besonderheit:</strong> Mit 13 Jahren nach Spanien ausgewandert</p>
-                    </div>
-                </div>
+        <div class="row">
+            <!-- HERKUNFT -->
+            <div class="box">
+                <h3>🌎 HERKUNFT</h3>
+                <p><span class="flag">🇦🇷</span> Argentinien</p>
+                <p>🏙️ Rosario, 24.06.1987</p>
+                <p>🇮🇹 Italienische Wurzeln</p>
+                <p>⚽ Jugend: Newell's Old Boys</p>
+                <p>✈️ Mit 13 nach Spanien</p>
             </div>
             
-            <!-- 2. AKTUELLER VEREIN & WERT & WOHNORT -->
-            <div id="aktuell" class="section">
-                <h2>📍 AKTUELLE INFOS</h2>
-                <div class="grid-3">
-                    <div class="info-card">
-                        <h3>Aktueller Verein</h3>
-                        <div class="flag">🇺🇸</div>
-                        <div class="big-number">Inter Miami</div>
-                        <div>Seit 2023</div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>Marktwert</h3>
-                        <div class="big-number">€25 Mio.</div>
-                        <div>(Stand 2024)</div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>Wohnort</h3>
-                        <div class="big-number">Miami</div>
-                        <div>🇺🇸 USA</div>
-                    </div>
-                </div>
+            <!-- AKTUELL -->
+            <div class="box">
+                <h3>📍 AKTUELL</h3>
+                <p><span class="flag">🇺🇸</span> <strong>Inter Miami</strong></p>
+                <p>💰 Marktwert: €25 Mio.</p>
+                <p>🏠 Wohnort: Miami, USA</p>
             </div>
             
-            <!-- 3. FAMILIE -->
-            <div id="familie" class="section">
-                <h2>👪 FAMILIE</h2>
-                <div class="grid-2">
-                    <div class="info-card">
-                        <h3>Ehefrau & Kinder</h3>
-                        <p><strong>Ehefrau:</strong> Antonela Roccuzzo</p>
-                        <p><strong>Söhne:</strong></p>
-                        <p>• Thiago (11)</p>
-                        <p>• Mateo (9)</p>
-                        <p>• Ciro (6)</p>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>Eltern & Geschwister</h3>
-                        <p><strong>Vater:</strong> Jorge Messi</p>
-                        <p><strong>Mutter:</strong> Celia Cuccittini</p>
-                        <p><strong>Brüder:</strong> Rodrigo, Matias</p>
-                        <p><strong>Schwester:</strong> Maria Sol</p>
-                    </div>
-                </div>
+            <!-- FAMILIE -->
+            <div class="box">
+                <h3>👪 FAMILIE</h3>
+                <p>💍 Antonela Roccuzzo</p>
+                <p>👦 Thiago (11), Mateo (9), Ciro (6)</p>
+                <p>👨‍👩‍👧 Eltern: Jorge & Celia</p>
             </div>
             
-            <!-- 4. TORE IN VEREINEN + NATIO -->
-            <div id="tore" class="section">
-                <h2>⚽ TORE</h2>
-                <div class="grid-2">
-                    <div class="info-card">
-                        <h3>🇪🇸 FC Barcelona</h3>
-                        <div class="big-number">672</div>
-                        <div>in 778 Spielen</div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>🇫🇷 Paris SG</h3>
-                        <div class="big-number">32</div>
-                        <div>in 75 Spielen</div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>🇺🇸 Inter Miami</h3>
-                        <div class="big-number">34</div>
-                        <div>in 44 Spielen</div>
-                    </div>
-                    
-                    <div class="info-card">
-                        <h3>🇦🇷 Argentinien</h3>
-                        <div class="big-number">109</div>
-                        <div>in 187 Spielen</div>
-                    </div>
-                </div>
-                
-                <!-- GESAMT -->
-                <div style="background: #ffd700; padding: 20px; border-radius: 10px; margin-top: 20px; text-align: center;">
-                    <span style="font-size: 30px;">🏆 GESAMT:</span>
-                    <span style="font-size: 50px; font-weight: bold; color: #0a1f3b;">847 TORE</span>
-                </div>
+            <!-- FUSS -->
+            <div class="box">
+                <h3>👟 FUSS</h3>
+                <p style="font-size: 40px; margin:0;">👈 LINKS</p>
+                <p>Bester Linksfuß der Welt</p>
             </div>
             
-            <!-- 5. WELCHER FUSS -->
-            <div id="fuss" class="section">
-                <h2>👟 FUSS</h2>
-                <div class="info-card" style="text-align: center;">
-                    <div style="font-size: 80px;">👈</div>
-                    <div style="font-size: 30px; font-weight: bold; color: #0a1f3b;">LINKER FUSS</div>
-                    <p>Messi ist Linksfuß - einer der besten der Welt mit links!</p>
-                </div>
+            <!-- TORE -->
+            <div class="box">
+                <h3>⚽ TORE</h3>
+                <p>🇪🇸 Barcelona: <strong>672</strong></p>
+                <p>🇫🇷 PSG: <strong>32</strong></p>
+                <p>🇺🇸 Inter Miami: <strong>34</strong></p>
+                <p>🇦🇷 Argentinien: <strong>109</strong></p>
+                <p class="big">GESAMT: 847</p>
             </div>
             
-            <!-- 6. WICHTIGSTE ERFOLGE -->
-            <div id="erfolge" class="section">
-                <h2>🏆 ERFOLGE</h2>
-                <div class="grid-3">
-                    <div class="info-card" style="text-align: center;">
-                        <div class="big-number">7x</div>
-                        <div>Ballon d'Or</div>
-                    </div>
-                    <div class="info-card" style="text-align: center;">
-                        <div class="big-number">4x</div>
-                        <div>Champions League</div>
-                    </div>
-                    <div class="info-card" style="text-align: center;">
-                        <div class="big-number">10x</div>
-                        <div>La Liga</div>
-                    </div>
-                    <div class="info-card" style="text-align: center;">
-                        <div class="big-number">1x</div>
-                        <div>Weltmeister 2022</div>
-                    </div>
-                    <div class="info-card" style="text-align: center;">
-                        <div class="big-number">2x</div>
-                        <div>Copa América</div>
-                    </div>
-                    <div class="info-card" style="text-align: center;">
-                        <div class="big-number">1x</div>
-                        <div>Olympia Gold</div>
-                    </div>
-                </div>
+            <!-- ERFOLGE -->
+            <div class="box">
+                <h3>🏆 ERFOLGE</h3>
+                <p>🏅 7x Ballon d'Or</p>
+                <p>🏆 4x Champions League</p>
+                <p>🇦🇷 Weltmeister 2022</p>
+                <p>🌟 10x La Liga</p>
+                <p>🥇 2x Copa América</p>
             </div>
         </div>
         
-        <!-- Footer -->
-        <div style="background: #0a1f3b; color: white; text-align: center; padding: 20px;">
-            <p>© 2024 - Messi Fanpage | Herkunft: Rosario, Argentinien 🇦🇷</p>
+        <div class="footer">
+            ⭐ Der GOAT - Geboren in Rosario, Argentinien ⭐
         </div>
     </div>
 </body>
