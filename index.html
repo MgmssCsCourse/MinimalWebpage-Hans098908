@@ -2,94 +2,141 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">  
-      <title>Lionel Messi</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trockene Pflanzen</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2efe6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #8b6f47;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .pflanze {
+            background-color: white;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        .pflanze img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .pflanze h2 {
+            color: #6b4f2a;
+        }
+
+        .pflanze p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #8b6f47;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
-   <body>
-    <div class="card">
 
-        <!-- ✅ BILD GANZ OBEN -->
-        <img src="" 
-             class="header-img">
+<body>
 
-        <h1>🇦🇷 LIONEL MESSI 🇦🇷</h1>
-        
-        
-        <!-- HERKUNFT -->
-        <div id="herkunft" class="box">
-            <h2>🌎 Wo kommt Messi her?</h2>
-            <p><span class="emoji">🇦🇷</span> <span class="fett">Land:</span> Argentinien (Südamerika)</p>
-            <p><span class="emoji">🏙️</span> <span class="fett">Geburtsstadt:</span> Rosario (24. Juni 1987)</p>
-            <p><span class="emoji">⚽</span> <span class="fett">Jugendverein:</span> Newell's Old Boys (da hat er als Kind gespielt)</p>
-            <p><span class="emoji">✈️</span> <span class="fett">Mit 13 nach Spanien:</span> Weil er krank war (Wachstumshormon-Mangel) und Barça die Behandlung bezahlt hat.</p>
-            <p><span class="emoji">🇮🇹</span> <span class="fett">Fun Fact:</span> Seine Urgroßeltern kamen aus Italien, deshalb hat er auch einen italienischen Pass.</p>
-        </div>
-        
-        <!-- AKTUELLER VEREIN & WERT & WOHNORT -->
-        <div id="aktuell" class="box">
-            <h2>📍 Was macht Messi gerade?</h2>
-            <p><span class="emoji">🇺🇸</span> <span class="fett">Aktueller Verein:</span> Inter Miami (USA) - seit 2023</p>
-            <p><span class="emoji">💰</span> <span class="fett">Marktwert:</span> 25 Millionen Euro (mit 36 Jahren immer noch viel!)</p>
-            <p><span class="emoji">🏠</span> <span class="fett">Wohnort:</span> Miami, Florida (USA)</p>
-            <p><span class="emoji">📅</span> <span class="fett">Vertrag:</span> bis 2025 bei Inter Miami</p>
-        </div>
-        
-        <!-- FAMILIE -->
-        <div id="familie" class="box">
-            <h2>👪 Familie</h2>
-            <p><span class="emoji">💍</span> <span class="fett">Ehefrau:</span> Antonela Roccuzzo</p>
-            <p><span class="emoji">👦👦👦</span> <span class="fett">Kinder:</span> Thiago, Mateo, Ciro</p>
-            <p><span class="emoji">👨👩</span> <span class="fett">Eltern:</span> Jorge und Celia</p>
-        </div>
-        
-        <!-- TORE -->
-        <div id="tore" class="box">
-            <h2>⚽ Wie viele Tore hat Messi geschossen?</h2>
-            <div class="tore-grid">
-                <div class="tore-item">
-                    <span class="emoji">🇪🇸</span>
-                    <div class="zahl">672</div>
-                    <div>FC Barcelona</div>
-                </div>
-                <div class="tore-item">
-                    <span class="emoji">🇫🇷</span>
-                    <div class="zahl">32</div>
-                    <div>Paris SG</div>
-                </div>
-                <div class="tore-item">
-                    <span class="emoji">🇺🇸</span>
-                    <div class="zahl">34</div>
-                    <div>Inter Miami</div>
-                </div>
-                <div class="tore-item">
-                    <span class="emoji">🇦🇷</span>
-                    <div class="zahl">109</div>
-                    <div>Argentinien</div>
-                </div>
-            </div>
-            <p style="text-align: center; font-size: 24px; font-weight: bold; background: #ffd700; padding: 10px; border-radius: 50px; margin-top: 15px;">
-                🎯 GESAMT: 847 TORE!
+    <header>
+        <h1>Trockene Pflanzen</h1>
+        <p>Pflanzen, die mit wenig Wasser leben können</p>
+    </header>
+
+    <div class="container">
+
+        <div class="pflanze">
+            <h2>1. Kaktus</h2>
+
+            <img src="images/kaktus.jpg" alt="Kaktus">
+
+            <p>
+                Der Kaktus ist eine bekannte Pflanze aus der Wüste.
+                Dort regnet es nur selten, deshalb speichert der Kaktus Wasser
+                in seinem dicken Stamm. Die spitzen Dornen schützen ihn vor
+                Tieren. Ein Kaktus braucht nur wenig Pflege und kann lange ohne
+                Wasser überleben.
             </p>
         </div>
-        
-        <!-- FUSS -->
-        <div id="fuss" class="box">
-            <h2>👟 Welcher Fuß?</h2>
-            <p style="font-size: 50px; text-align: center;">👈</p>
-            <p style="text-align: center; font-size: 22px; font-weight: bold;">LINKSFUSS!</p>
-        </div>
-        
-        <!-- ERFOLGE -->
-        <div id="erfolge" class="box">
-            <h2>🏆 Wichtigste Erfolge</h2>
-            <p>7x Ballon d'Or</p>
-            <p>Weltmeister 2022</p>
-            <p>4x Champions League</p>
+
+        <div class="pflanze">
+            <h2>2. Aloe Vera</h2>
+
+            <img src="images/aloe.jpg" alt="Aloe Vera">
+
+            <p>
+                Die Aloe Vera ist eine Pflanze mit dicken, grünen Blättern.
+                In den Blättern befindet sich viel Wasser. Deshalb kann die
+                Pflanze auch in trockenen Gebieten wachsen. Viele Menschen
+                benutzen Aloe Vera für Cremes oder gegen Sonnenbrand.
+                Sie braucht viel Sonne und nur wenig Wasser.
+            </p>
         </div>
 
+        <div class="pflanze">
+            <h2>3. Lavendel</h2>
+
+            <img src="images/lavendel.jpg" alt="Lavendel">
+
+            <p>
+                Lavendel ist eine Pflanze mit kleinen lila Blüten.
+                Sie riecht sehr angenehm und wird oft in Gärten angepflanzt.
+                Lavendel wächst besonders gut an sonnigen und trockenen Orten.
+                Die Pflanze wird auch für Parfüm oder Tee verwendet.
+                Bienen mögen Lavendel ebenfalls sehr gerne.
+            </p>
         </div>
+
+        <div class="pflanze">
+            <h2>4. Agave</h2>
+
+            <img src="images/agave.jpg" alt="Agave">
+
+            <p>
+                Die Agave kommt aus warmen Ländern wie Mexiko.
+                Sie hat große, dicke Blätter mit spitzen Enden.
+                Die Pflanze speichert Wasser und kann deshalb lange Trockenheit
+                aushalten. Manche Agaven werden sehr groß und leben viele Jahre.
+                Sie brauchen nur wenig Wasser und viel Sonne.
+            </p>
+        </div>
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
